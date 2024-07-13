@@ -1,0 +1,17 @@
+{
+  "name": "data-ingestion-service",
+  "description": "Service to ingest data from various sources",
+  "instances": 2,
+  "config": {
+    "cpu": "500m",
+    "memory": "512Mi",
+    "image": "data-ingestion-image:latest"
+  },
+  "subtasks": [
+    "Set up data pipelines",
+    "Implement ETL processes",
+    "Ensure data quality",
+    "Optimize data storage"
+  ],
+  "dependencies": ["kafka"]
+}
